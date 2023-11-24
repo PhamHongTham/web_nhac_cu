@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="false" stopOnFailure="false">
+    <testsuites>
+        <testsuite name="calculator">
+            <directory>tests</directory>
+        </testsuite>
+  </testsuites>
+        
+    <coverage cacheDirectory="./tests"
+          includeUncoveredFiles="true"
+          processUncoveredFiles="true"
+          pathCoverage="true"
+          ignoreDeprecatedCodeUnits="true"
+          disableCodeCoverageIgnore="true">
+          <include>
+            <directory suffix=".php">tests/</directory>
+        </include>
+    <!-- ... -->
+    </coverage>
+</phpunit>
